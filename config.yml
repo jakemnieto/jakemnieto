@@ -1,0 +1,86 @@
+baseURL: "https://jaketempx.github.io/" 
+title: "Jake Nieto Personal Site"
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+pagination:
+  pagerSize: 20
+
+taxonomies:
+    tag: tags
+
+menu:
+    main:
+        - name: Projects
+          url: projects/
+          weight: 2
+        - name: Blog
+          url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+          weight: 6
+
+params:
+    description: "Jake Nieto portfolio website."
+    author: Jake Nieto
+    DateFormat: "January 2006"
+    defaultTheme: light
+    hideFooter: false
+    disableThemeToggle: true
+    ShowShareButtons: false
+    ShowReadingTime: false
+    disableSpecial1stPost: true
+    disableAnchoredHeadings: true
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: true
+    ShowAllPagesInArchive: false
+    MainSections: ["projects","employment","education"]
+    ShowToc: false
+    disableScrollToTop: true
+    TocOpen: true
+    ShowWordCount: false
+    UseHugoToc: true
+    comments: false
+    math: true
+    profileMode:
+          enabled: true
+          title: Jake Nieto
+          subtitle: "<blurb about Jake> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In metus est, dignissim vel vehicula elementum, consequat id libero. Ut finibus suscipit euismod. Integer euismod elementum cursus. Vivamus elementum eu massa at tempus. Mauris turpis metus, suscipit et massa ac, dapibus pulvinar tellus.<br><br> Click the icons below to download my resume or email me."
+          imageUrl: "nieto.jpg"
+          imageWidth: 160
+          imageHeight: 213
+          buttons:
+            - name: Projects
+              url: projects/
+            - name: Employment
+              url: employment/
+            - name: Education
+              url: education/
+
+    socialIcons:
+        - name: CV
+          url: resumetmp.pdf
+        - name: Email
+          url: mailto:jakemnieto@gmail.com
+
+    assets:
+        disableScrollBarStyle: true
+    cover:
+        hiddenInList: false
+        hiddenInSingle: true
+    label:
+      text: "Jake Nieto"
+      icon: favicon.ico
+      iconHeight: 18
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        guessSyntax: true
+        style: autumn 
+    tableOfContents:
+        endLevel: 2
+        ordered: false
+        startLevel: 2
