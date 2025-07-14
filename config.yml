@@ -12,12 +12,12 @@ taxonomies:
 
 menu:
     main:
-        - name: Projects
+        - name: Resume
+          url: resumetmp.pdf
+          weight: 1
+        - name: Housing Development Portfolio
           url: projects/
           weight: 2
-        - name: Blog
-          url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
-          weight: 6
 
 params:
     description: "Jake Nieto portfolio website."
@@ -34,7 +34,7 @@ params:
     ShowBreadCrumbs: false
     ShowCodeCopyButtons: true
     ShowAllPagesInArchive: false
-    MainSections: ["projects","employment","education"]
+    MainSections: ["resume","projects"]
     ShowToc: false
     disableScrollToTop: true
     TocOpen: true
@@ -50,16 +50,12 @@ params:
           imageWidth: 160
           imageHeight: 213
           buttons:
-            - name: Projects
+            - name: Resume
+              url: resumetmp.pdf
+            - name: Housing Development Portfolio
               url: projects/
-            - name: Employment
-              url: employment/
-            - name: Education
-              url: education/
 
     socialIcons:
-        - name: CV
-          url: resumetmp.pdf
         - name: Email
           url: mailto:jakemnieto@gmail.com
 
